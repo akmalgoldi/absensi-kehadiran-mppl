@@ -1,9 +1,7 @@
 # 📚 Aplikasi Kuis Online Sederhana
 
 ## 📝 Deskripsi Proyek
-**Aplikasi Kuis Online Sederhana** adalah sebuah sistem berbasis web yang dirancang untuk memfasilitasi pengguna dalam mengerjakan kuis secara digital. Aplikasi ini memungkinkan pengguna untuk melakukan registrasi dan login, mengerjakan soal kuis satu per satu, dan secara otomatis menampilkan skor setelah kuis selesai. Admin dapat menambahkan soal kuis secara manual melalui form input. Setiap skor yang diperoleh akan disimpan dan ditampilkan pada halaman riwayat skor pengguna.
-
-Aplikasi ini dikembangkan menggunakan bahasa pemrograman **PHP** dan basis data **MySQL**, serta didukung oleh antarmuka sederhana menggunakan **HTML dan CSS**. Proyek ini merupakan hasil kerja kelompok dalam rangka memenuhi tugas mata kuliah **Manajemen Proyek Perangkat Lunak (MPPL)** di Program Studi Informatika UIN Sunan Kalijaga.
+**Aplikasi Kuis Online** adalah Sistem berbasis web yang memungkinkan pengguna mengerjakan kuis secara digital, dengan fitur registrasi, login, pengerjaan soal, dan penilaian otomatis. Admin dapat menambahkan soal melalui dashboard, sementara pengguna dapat melihat riwayat skor. Dibangun menggunakan PHP, MySQL, HTML, dan CSS, 
 
 ---
 
