@@ -21,11 +21,10 @@
 
 ## 👥 Anggota Kelompok
 
-- Akmal Goldi Bazarghan – Back-End  
-- Mulya Adi Putra – Front-End  
-- Nabil Mihalli Atstsaqiv – Front-End  
-- M. Alan Daulay – UI/UX Designer  
-- Muhammad Dzaky Danarta – Back-End
+- Akmal Goldi Bazarghan  
+- M. Alan Daulay 
+- Muhammad Dzaky Danarta
+- Muhammad Yusran Abdullah
 
 ## 🔧 Peran Anggota
 
