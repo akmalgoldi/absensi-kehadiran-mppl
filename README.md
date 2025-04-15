@@ -21,5 +21,5 @@ Aplikasi web berbasis **PHP + MySQL** yang digunakan untuk mencatat dan memantau
 - HTML & CSS
 
 ---
-
+<pre> <code> ## 📁 Struktur Direktori ``` absensi-kehadiran/ ├── src/ │ ├── index.php │ ├── dashboard.php │ ├── absensi.php │ ├── proses_login.php │ ├── logout.php │ ├── database/ │ │ └── koneksi.php │ ├── css/ │ │ └── style.css │ └── js/ │ └── script.js │ ├── docs/ │ └── struktur_db.sql │ ├── roles/ │ ├── owner.docx │ ├── maintainer.docx │ ├── developer.docx │ └── reporter.docx │ ├── README.md └── .gitignore ``` </code> </pre>
 
