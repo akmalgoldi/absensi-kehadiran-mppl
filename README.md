@@ -1,23 +1,72 @@
-# 📋 Aplikasi Absensi Kehadiran (MPPL)
+# 📚 Aplikasi Kuis Online Sederhana
 
-Aplikasi web berbasis **PHP + MySQL** yang digunakan untuk mencatat dan memantau kehadiran pengguna, khususnya mahasiswa. Dibuat sebagai bagian dari tugas Mata Kuliah **Manajemen Proyek Perangkat Lunak (MPPL)**.
+## 📝 Deskripsi Proyek
+**Aplikasi Kuis Online Sederhana** adalah sebuah sistem berbasis web yang dirancang untuk memfasilitasi pengguna dalam mengerjakan kuis secara digital. Aplikasi ini memungkinkan pengguna untuk melakukan registrasi dan login, mengerjakan soal kuis satu per satu, dan secara otomatis menampilkan skor setelah kuis selesai. Admin dapat menambahkan soal kuis secara manual melalui form input. Setiap skor yang diperoleh akan disimpan dan ditampilkan pada halaman riwayat skor pengguna.
 
----
-
-## 📌 Fitur Utama
-
-- 🔐 Login pengguna dengan autentikasi
-- ✅ Input kehadiran harian (Hadir, Izin, Sakit, Alpha)
-- 📊 Dashboard sederhana
-- 🚪 Logout pengguna
-- 🔐 Hak akses berdasarkan role (admin & mahasiswa - opsional)
+Aplikasi ini dikembangkan menggunakan bahasa pemrograman **PHP** dan basis data **MySQL**, serta didukung oleh antarmuka sederhana menggunakan **HTML dan CSS**. Proyek ini merupakan hasil kerja kelompok dalam rangka memenuhi tugas mata kuliah **Manajemen Proyek Perangkat Lunak (MPPL)** di Program Studi Informatika UIN Sunan Kalijaga.
 
 ---
 
-## 🧰 Teknologi yang Digunakan
+## 🎯 Fitur Utama
+- Registrasi dan login pengguna
+- Input soal kuis (pertanyaan, pilihan, jawaban benar)
+- Menjawab soal satu per satu
+- Penilaian otomatis
+- Penyimpanan skor dan riwayat skor per user
+- Logout akun
 
-- **PHP (native)**
-- **MySQL (phpMyAdmin)**
-- HTML & CSS
+## 🛠️ Teknologi yang Digunakan
+- **Bahasa Pemrograman:** PHP
+- **Database:** MySQL
+- **Frontend:** HTML, CSS
 
----
+## 📁 Struktur Folder
+kuis-online/
+│
+├── config/
+│   └── koneksi.php               # file koneksi ke database
+│
+├── auth/
+│   ├── register.php              # proses registrasi
+│   ├── login.php                 # proses login
+│   └── logout.php                # proses logout
+│
+├── soal/
+│   ├── tambah.php                # form input soal kuis
+│   ├── simpan.php                # proses simpan soal ke DB
+│   └── tampil.php                # tampilkan soal satu per satu
+│
+├── hasil/
+│   ├── penilaian.php             # proses penilaian otomatis
+│   └── riwayat.php               # tampilkan riwayat skor user
+│
+├── index.php                     # halaman utama (login / redirect)
+├── dashboard.php                 # setelah login
+├── kuis.php                      # halaman kuis
+├── skor.php                      # tampilkan skor langsung
+└── style.css                     # styling dasar
+
+## 👥 Anggota Kelompok
+
+- Akmal Goldi Bazarghan – Back-End  
+- Mulya Adi Putra – Front-End  
+- Nabil Mihalli Atstsaqiv – Front-End  
+- M. Alan Daulay – UI/UX Designer  
+- Muhammad Dzaky Danarta – Back-End
+
+## 🔧 Peran Anggota
+
+### 🔸 Owner – Akmal Goldi Bazarghan  
+Bertanggung jawab atas pengelolaan utama proyek di GitHub, memastikan seluruh proses pengembangan berjalan sesuai rencana, serta mengkoordinasi pembagian tugas tiap anggota.
+
+### 🔸 Maintainer – Muhammad Dzaky Danarta  
+Menjaga kualitas kode, melakukan pengecekan terhadap pull request, dan memastikan proyek tetap berjalan dengan struktur yang rapi serta bebas dari error saat dijalankan.
+
+### 🔸 Developer – Mulya Adi Putra  
+Bertugas mengembangkan sisi antarmuka pengguna (frontend) aplikasi kuis online, memastikan tampilan mudah digunakan dan sesuai dengan kebutuhan pengguna.
+
+### 🔸 Developer – Nabil Mihalli Atstsaqiv  
+Bertugas membantu pengembangan frontend, serta mengintegrasikan tampilan dengan fungsionalitas dasar aplikasi kuis.
+
+### 🔸 Reporter – M. Alan Daulay  
+Mendokumentasikan seluruh proses pengembangan, membuat laporan, serta mengumpulkan file deskripsi tugas anggota. Juga bertugas menambahkan dosen sebagai reporter ke repositori.
