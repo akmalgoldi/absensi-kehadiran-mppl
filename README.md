@@ -18,31 +18,6 @@
 - **Database:** MySQL
 - **Frontend:** HTML, CSS
 
-## 📁 Struktur Folder
-kuis-online/
-│
-├── config/
-│   └── koneksi.php               # file koneksi ke database
-│
-├── auth/
-│   ├── register.php              # proses registrasi
-│   ├── login.php                 # proses login
-│   └── logout.php                # proses logout
-│
-├── soal/
-│   ├── tambah.php                # form input soal kuis
-│   ├── simpan.php                # proses simpan soal ke DB
-│   └── tampil.php                # tampilkan soal satu per satu
-│
-├── hasil/
-│   ├── penilaian.php             # proses penilaian otomatis
-│   └── riwayat.php               # tampilkan riwayat skor user
-│
-├── index.php                     # halaman utama (login / redirect)
-├── dashboard.php                 # setelah login
-├── kuis.php                      # halaman kuis
-├── skor.php                      # tampilkan skor langsung
-└── style.css                     # styling dasar
 
 ## 👥 Anggota Kelompok
 
