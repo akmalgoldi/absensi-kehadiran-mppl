@@ -31,14 +31,11 @@
 ### 🔸 Owner – Akmal Goldi Bazarghan  
 Bertanggung jawab atas pengelolaan utama proyek di GitHub, memastikan seluruh proses pengembangan berjalan sesuai rencana, serta mengkoordinasi pembagian tugas tiap anggota.
 
-### 🔸 Maintainer – Muhammad Dzaky Danarta  
+### 🔸 Maintainer – M.Alan Daulay
 Menjaga kualitas kode, melakukan pengecekan terhadap pull request, dan memastikan proyek tetap berjalan dengan struktur yang rapi serta bebas dari error saat dijalankan.
 
-### 🔸 Developer – Mulya Adi Putra  
-Bertugas mengembangkan sisi antarmuka pengguna (frontend) aplikasi kuis online, memastikan tampilan mudah digunakan dan sesuai dengan kebutuhan pengguna.
+### 🔸 Developer – Muhammad Dzaky Danarta
+Bertugas mengembangkan sisi antarmuka pengguna (frontend) aplikasi kuis online, memastikan tampilan mudah digunakan dan sesuai dengan kebutuhan pengguna serta mengintegrasikan tampilan dengan fungsionalitas dasar aplikasi kuis.
 
-### 🔸 Developer – Nabil Mihalli Atstsaqiv  
-Bertugas membantu pengembangan frontend, serta mengintegrasikan tampilan dengan fungsionalitas dasar aplikasi kuis.
-
-### 🔸 Reporter – M. Alan Daulay  
+### 🔸 Reporter – Muhammad Yusran Abdullah
 Mendokumentasikan seluruh proses pengembangan, membuat laporan, serta mengumpulkan file deskripsi tugas anggota. Juga bertugas menambahkan dosen sebagai reporter ke repositori.
