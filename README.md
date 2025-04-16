@@ -6,17 +6,18 @@
 ---
 
 ## 🎯 Fitur Utama
-- Registrasi dan login pengguna
-- Input soal kuis (pertanyaan, pilihan, jawaban benar)
-- Menjawab soal satu per satu
-- Penilaian otomatis
-- Penyimpanan skor dan riwayat skor per user
-- Logout akun
+- Login & Register : Pengguna dapat mendaftar dan masuk menggunakan akun mereka.
+- Kuis : Pengguna dapat mengikuti kuis yang tersedia.
+- Hasil Kuis : Pengguna dapat melihat skor setelah menyelesaikan kuis.
+- Admin Dashboard : Admin dapat mengelola soal-soal kuis dan melihat hasil kuis dari pengguna.
+- CRUD Soal : Admin dapat menambah, mengedit, dan menghapus soal kuis.
+
 
 ## 🛠️ Teknologi yang Digunakan
-- **Bahasa Pemrograman:** PHP
-- **Database:** MySQL
-- **Frontend:** HTML, CSS, JS
+- PHP: Untuk pengembangan aplikasi backend.
+- MySQL: Sebagai sistem manajemen basis data.
+- HTML, CSS, JavaScript: Untuk tampilan frontend aplikasi.
+- Bootstrap : Untuk mempercantik tampilan antarmuka pengguna.
 
 
 ## 👥 Anggota Kelompok
