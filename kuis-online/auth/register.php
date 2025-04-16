@@ -1,44 +1,39 @@
-<?php require_once '../config/koneksi.php'; ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Registrasi</title>
-    <link rel="stylesheet" href="../assets/style.css">
-</head>
-<body>
-    <div class="container">
-        <h2>Registrasi</h2>
-        <form action="register.php" method="post">
-            <div class="form-group">
-                <label>Nama Lengkap</label>
-                <input type="text" name="nama_lengkap" required>
-            </div>
-            <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="username" required>
-            </div>
-            <div class="form-group">
-                <label>Password</label>
-                <input type="password" name="password" required>
-            </div>
-            <button type="submit" name="register">Daftar</button>
-        </form>
-        <p>Sudah punya akun? <a href="login.php">Login disini</a></p>
-    </div>
+<?php
+session_start();
+include '../config/db.php';
 
-    <?php
-    if (isset($_POST['register'])) {
-        $nama = $_POST['nama_lengkap'];
-        $username = $_POST['username'];
-        $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $password_hashed = password_hash($password, PASSWORD_DEFAULT);
 
-        $stmt = $pdo->prepare("INSERT INTO users (username, password, nama_lengkap) VALUES (?, ?, ?)");
-        if ($stmt->execute([$username, $password, $nama])) {
-            echo "<script>alert('Registrasi berhasil! Silakan login.'); window.location='login.php';</script>";
+    // Mengecek apakah username sudah ada
+    $sql = "SELECT * FROM users WHERE username = '$username'";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        echo "Username sudah terdaftar.";
+    } else {
+        // Menyimpan pengguna baru ke dalam database
+        $sql = "INSERT INTO users (username, password, role) VALUES ('$username', '$password_hashed', 'user')";
+        if ($conn->query($sql) === TRUE) {
+            echo "Registrasi berhasil! <a href='login.php'>Login sekarang</a>";
         } else {
-            echo "<script>alert('Registrasi gagal. Username mungkin sudah digunakan.');</script>";
+            echo "Terjadi kesalahan: " . $conn->error;
         }
     }
-    ?>
-</body>
-</html>
+}
+?>
+
+<!-- Formulir registrasi -->
+<form method="POST">
+    <label for="username">Username:</label>
+    <input type="text" name="username" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" required><br>
+
+    <button type="submit">Daftar</button>
+</form>
+
+<!-- Tautan ke halaman login -->
+<p>Sudah punya akun? <a href="login.php">Login sekarang</a></p>

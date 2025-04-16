@@ -1,48 +1,39 @@
-<?php 
+<?php
+session_start();
+include '../config/db.php';
 
-require_once '../config/koneksi.php'; ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Login</title>
-    <link rel="stylesheet" href="../assets/style.css">
-</head>
-<body>
-    <div class="container">
-        <h2>Login</h2>
-        <form action="login.php" method="post">
-            <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="username" required>
-            </div>
-            <div class="form-group">
-                <label>Password</label>
-                <input type="password" name="password" required>
-            </div>
-            <button type="submit" name="login">Login</button>
-        </form>
-        <p>Belum punya akun? <a href="register.php">Daftar disini</a></p>
-    </div>
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
-    <?php
-    if (isset($_POST['login'])) {
-        $username = $_POST['username'];
-        $password = $_POST['password'];
+    // Query untuk mengecek username di database
+    $sql = "SELECT * FROM users WHERE username = '$username'";
+    $result = $conn->query($sql);
+    $user = $result->fetch_assoc();
 
-        $stmt = $pdo->prepare("SELECT * FROM users WHERE username = ?");
-        $stmt->execute([$username]);
-        $user = $stmt->fetch();
-
-        if ($user && password_verify($password, $user['password'])) {
-            $_SESSION['user_id'] = $user['id'];
-            $_SESSION['username'] = $user['username'];
-            $_SESSION['nama_lengkap'] = $user['nama_lengkap'];
-            header("Location: ../dashboard.php");
-            exit();
-        } else {
-            echo "<script>alert('Username atau password salah!');</script>";
-        }
+    // Verifikasi password
+    if ($user && password_verify($password, $user['password'])) {
+        $_SESSION['user_id'] = $user['id'];
+        $_SESSION['username'] = $user['username'];
+        $_SESSION['role'] = $user['role'];
+        header('Location: ../index.php');
+        exit;
+    } else {
+        echo "Username atau password salah.";
     }
-    ?>
-</body>
-</html>
+}
+?>
+
+<!-- Formulir login -->
+<form method="POST">
+    <label for="username">Username:</label>
+    <input type="text" name="username" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" required><br>
+
+    <button type="submit">Login</button>
+</form>
+
+<!-- Tautan ke halaman registrasi -->
+<p>Belum punya akun? <a href="register.php">Daftar sekarang</a></p>

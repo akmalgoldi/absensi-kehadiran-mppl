@@ -1,8 +1,13 @@
 <?php
+session_start();
 
-require_once '../config/koneksi.php';
+// Menghapus semua sesi
+session_unset();
 
+// Menghancurkan sesi
 session_destroy();
-header("Location: ../index.php");
-exit();
+
+// Mengarahkan pengguna ke halaman login
+header('Location: login.php');
+exit;
 ?>
