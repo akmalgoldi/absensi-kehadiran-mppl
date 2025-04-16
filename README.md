@@ -16,7 +16,7 @@
 ## 🛠️ Teknologi yang Digunakan
 - **Bahasa Pemrograman:** PHP
 - **Database:** MySQL
-- **Frontend:** HTML, CSS
+- **Frontend:** HTML, CSS, JS
 
 
 ## 👥 Anggota Kelompok
