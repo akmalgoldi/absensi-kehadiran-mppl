@@ -1,42 +1,45 @@
-# 📚   Quiz Application
+📚 Quiz Application
+📝 Deskripsi Proyek
+Aplikasi Kuis Online adalah sistem berbasis web yang memungkinkan pengguna untuk mengerjakan kuis secara digital. Pengguna dapat mendaftar, login, mengerjakan soal, serta melihat skor setelah pengerjaan. Admin memiliki kontrol penuh untuk menambahkan, mengedit, dan menghapus soal melalui dashboard, serta dapat melihat riwayat hasil kuis pengguna. Aplikasi ini dibangun menggunakan PHP, MySQL, HTML, CSS, dan JavaScript.
 
-## 📝 Deskripsi Proyek
-**Aplikasi Kuis Online** adalah Sistem berbasis web yang memungkinkan pengguna mengerjakan kuis secara digital, dengan fitur registrasi, login, pengerjaan soal, dan penilaian otomatis. Admin dapat menambahkan soal melalui dashboard, sementara pengguna dapat melihat riwayat skor. Dibangun menggunakan PHP, MySQL, HTML, dan CSS, 
+🎯 Fitur Utama
+Login & Register: Pengguna dapat mendaftar dan masuk ke dalam sistem menggunakan akun yang sudah terdaftar.
 
----
+Kuis: Pengguna dapat memilih dan mengerjakan kuis yang tersedia.
 
-## 🎯 Fitur Utama
-- Login & Register : Pengguna dapat mendaftar dan masuk menggunakan akun mereka.
-- Kuis : Pengguna dapat mengikuti kuis yang tersedia.
-- Hasil Kuis : Pengguna dapat melihat skor setelah menyelesaikan kuis.
-- Admin Dashboard : Admin dapat mengelola soal-soal kuis dan melihat hasil kuis dari pengguna.
-- CRUD Soal : Admin dapat menambah, mengedit, dan menghapus soal kuis.
+Hasil Kuis: Pengguna dapat melihat skor mereka setelah menyelesaikan kuis.
 
+Admin Dashboard: Admin dapat mengelola soal-soal kuis melalui dashboard admin yang mudah digunakan.
 
-## 🛠️ Teknologi yang Digunakan
-- PHP: Untuk pengembangan aplikasi backend.
-- MySQL: Sebagai sistem manajemen basis data.
-- HTML, CSS, JavaScript: Untuk tampilan frontend aplikasi.
-- Bootstrap : Untuk mempercantik tampilan antarmuka pengguna.
+CRUD Soal: Admin memiliki fitur untuk menambah, mengedit, dan menghapus soal kuis, serta dapat melihat hasil kuis pengguna.
 
+🛠️ Teknologi yang Digunakan
+PHP: Untuk pengembangan aplikasi backend.
 
-## 👥 Anggota Kelompok
+MySQL: Sebagai sistem manajemen basis data untuk menyimpan soal-soal dan hasil kuis pengguna.
 
-- Akmal Goldi Bazarghan  
-- M. Alan Daulay 
-- Muhammad Dzaky Danarta
-- Muhammad Yusran Abdullah
+HTML, CSS, JavaScript: Untuk antarmuka pengguna dan interaksi dinamis.
 
-## 🔧 Peran Anggota
+Bootstrap: Untuk mempercantik tampilan antarmuka pengguna dan memberikan responsivitas di berbagai perangkat.
 
-### 🔸 Owner – Akmal Goldi Bazarghan  
-Bertanggung jawab atas pengelolaan utama proyek di GitHub, memastikan seluruh proses pengembangan berjalan sesuai rencana, serta mengkoordinasi pembagian tugas tiap anggota.
+👥 Anggota Kelompok
+Akmal Goldi Bazarghan
 
-### 🔸 Maintainer – M.Alan Daulay
-Menjaga kualitas kode, melakukan pengecekan terhadap pull request, dan memastikan proyek tetap berjalan dengan struktur yang rapi serta bebas dari error saat dijalankan.
+M. Alan Daulay
 
-### 🔸 Developer – Muhammad Dzaky Danarta
+Muhammad Dzaky Danarta
+
+Muhammad Yusran Abdullah
+
+🔧 Peran Anggota
+🔸 Owner – Akmal Goldi Bazarghan
+Bertanggung jawab atas pengelolaan utama proyek di GitHub, memastikan seluruh proses pengembangan berjalan sesuai rencana, serta mengkoordinasi pembagian tugas tiap anggota dan menjaga kualitas keseluruhan proyek.
+
+🔸 Maintainer – M.Alan Daulay
+Menjaga kualitas kode, melakukan pengecekan terhadap pull request, dan memastikan proyek tetap berjalan dengan struktur yang rapi serta bebas dari error saat dijalankan. Berperan dalam pemeliharaan dan perbaikan aplikasi.
+
+🔸 Developer – Muhammad Dzaky Danarta
 Bertugas mengembangkan sisi antarmuka pengguna (frontend) aplikasi kuis online, memastikan tampilan mudah digunakan dan sesuai dengan kebutuhan pengguna serta mengintegrasikan tampilan dengan fungsionalitas dasar aplikasi kuis.
 
-### 🔸 Reporter – Muhammad Yusran Abdullah
-Mendokumentasikan seluruh proses pengembangan, membuat laporan, serta mengumpulkan file deskripsi tugas anggota. Juga bertugas menambahkan dosen sebagai reporter ke repositori.
+🔸 Reporter – Muhammad Yusran Abdullah
+Mendokumentasikan seluruh proses pengembangan, membuat laporan proyek, serta mengumpulkan file deskripsi tugas anggota. Bertanggung jawab dalam melaporkan kemajuan kepada dosen dan menambahkan dosen sebagai reporter ke repositori.
