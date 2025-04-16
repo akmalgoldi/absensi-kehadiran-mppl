@@ -1,4 +1,4 @@
-# 📚 Aplikasi Kuis Online 
+# 📚   Quiz Application
 
 ## 📝 Deskripsi Proyek
 **Aplikasi Kuis Online** adalah Sistem berbasis web yang memungkinkan pengguna mengerjakan kuis secara digital, dengan fitur registrasi, login, pengerjaan soal, dan penilaian otomatis. Admin dapat menambahkan soal melalui dashboard, sementara pengguna dapat melihat riwayat skor. Dibangun menggunakan PHP, MySQL, HTML, dan CSS, 
