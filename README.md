@@ -1,24 +1,49 @@
-# 📚   Quiz Application
+# 🎯 QuizHub – Aplikasi Kuis Online Sederhana
 
-## 📝 Deskripsi Proyek
-**Aplikasi Kuis Online** adalah sistem berbasis web yang memungkinkan pengguna untuk mengerjakan kuis secara digital. Pengguna dapat mendaftar, login, mengerjakan soal, serta melihat skor setelah pengerjaan. Admin memiliki kontrol penuh untuk menambahkan, mengedit, dan menghapus soal melalui dashboard, serta dapat melihat riwayat hasil kuis pengguna. Aplikasi ini dibangun menggunakan **PHP**, **MySQL**, **HTML**, **CSS**, dan **JavaScript**.
-
----
-
-## 🎯 Fitur Utama
-- **Login & Register**: Pengguna dapat mendaftar dan masuk ke dalam sistem menggunakan akun yang sudah terdaftar.
-- **Kuis**: Pengguna dapat memilih dan mengerjakan kuis yang tersedia.
-- **Hasil Kuis**: Pengguna dapat melihat skor mereka setelah menyelesaikan kuis.
-- **Admin Dashboard**: Admin dapat mengelola soal-soal kuis melalui dashboard admin yang mudah digunakan.
-- **CRUD Soal**: Admin memiliki fitur untuk menambah, mengedit, dan menghapus soal kuis, serta dapat melihat hasil kuis pengguna.
+QuizHub adalah aplikasi kuis online berbasis web yang terinspirasi dari Kahoot, namun dirancang lebih sederhana. Aplikasi ini memungkinkan seorang host untuk membuat kuis dan peserta dapat bergabung menggunakan PIN tanpa perlu login.
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
-- **PHP**: Untuk pengembangan aplikasi backend.
-- **MySQL**: Sebagai sistem manajemen basis data untuk menyimpan soal-soal dan hasil kuis pengguna.
-- **HTML, CSS, JavaScript**: Untuk antarmuka pengguna dan interaksi dinamis.
-- **Bootstrap**: Untuk mempercantik tampilan antarmuka pengguna dan memberikan responsivitas di berbagai perangkat.
+## 📌 Fitur Utama
+
+### Untuk Host:
+- Register & Login
+- Dashboard Host
+- Membuat kuis baru
+- Menambahkan pertanyaan dan jawaban
+- Memulai kuis (generate PIN)
+- Melihat peserta yang bergabung
+- Menjalankan sesi kuis live
+- Melihat hasil dan skor akhir
+
+### Untuk Peserta:
+- Join kuis menggunakan PIN + nickname
+- Menunggu sesi kuis dimulai
+- Menjawab pertanyaan satu per satu secara live
+- Melihat skor akhir dan peringkat
+
+---
+
+## 💻 Teknologi
+- PHP Native
+- MySQL (via phpMyAdmin)
+- HTML, CSS, JavaScript (basic)
+- Tanpa framework (sederhana)
+
+---
+
+## ⚙️ Cara Menjalankan
+
+1. Clone repo ini:
+   ```bash
+   git clone https://github.com/namakamu/quizhub.git
+   ```
+2. Import file database.sql ke phpMyAdmin.
+3. Atur koneksi database di: `config/db.php`
+4. Jalankan project menggunakan XAMPP atau Laragon.
+5. Buka browser dan akses:
+   ```
+   http://localhost/quizhub/public/
 
 ---
 
