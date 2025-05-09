@@ -36,7 +36,7 @@ QuizHub adalah aplikasi kuis online berbasis web yang terinspirasi dari Kahoot, 
 
 1. Clone repo ini:
    ```bash
-   git clone https://github.com/namakamu/quizhub.git
+   git clone https://github.com/akmalgoldi/quizhub.git
    ```
 2. Import file database.sql ke phpMyAdmin.
 3. Atur koneksi database di: `config/db.php`
