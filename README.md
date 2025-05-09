@@ -40,7 +40,7 @@ QuizHub adalah aplikasi kuis online berbasis web yang terinspirasi dari Kahoot, 
    ```
 2. Import file database.sql ke phpMyAdmin.
 3. Atur koneksi database di: `config/db.php`
-4. Jalankan project menggunakan XAMPP atau Laragon.
+4. Jalankan project menggunakan XAMPP.
 5. Buka browser dan akses:
    ```
    http://localhost/quizhub/public/
