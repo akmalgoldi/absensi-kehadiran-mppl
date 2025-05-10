@@ -5,22 +5,34 @@ QuizHub adalah aplikasi kuis online berbasis web, dengan fitur yang lebih sederh
 
 ## 📌 Fitur Utama
 
-### 👨‍🏫 Host
-- Register / Login
-- Dashboard Host
-- Membuat kuis baru
-- Menambahkan pertanyaan dan jawaban
-- Memulai sesi kuis dan generate PIN
-- Melihat skor dan hasil akhir peserta
-  
-### 🧑‍🎓 Player
-- Join kuis menggunakan PIN
-- Memasukkan nickname
-- Menunggu kuis dimulai
-- Menjawab pertanyaan satu per satu secara live
-- Melihat skor akhir atau peringkat
+## 👨‍🏫 Alur untuk Host
 
----
+1. Register / Login
+2. Akses Dashboard
+3. Buat kuis dan tambah soal + jawaban
+4. Mulai kuis → generate PIN
+5. Lihat skor & hasil peserta
+
+## 🧑‍🎓 Alur untuk Player
+
+1. Join kuis dengan PIN & nickname
+2. Menunggu kuis dimulai
+3. Menjawab pertanyaan satu per satu secara live
+4. Melihat skor akhir atau peringkat
+
+## ⚡️ Fitur Utama
+
+- Live session: peserta hanya bisa menjawab saat sesi dimulai
+- PIN system: kuis hanya bisa diikuti dengan PIN yang valid
+- Real-time progress: sinkronisasi antara Host dan Player
+- Penilaian otomatis berdasarkan jawaban yang dipilih
+
+## 🚀 Cara Menjalankan
+
+1. Import database dari file `quizhub.sql` ke phpMyAdmin
+2. Jalankan server lokal (XAMPP / Laragon / lainnya)
+3. Akses via browser: `http://localhost/quizhub`
+
 
 ## 💻 Teknologi
 - PHP Native
@@ -32,21 +44,6 @@ QuizHub adalah aplikasi kuis online berbasis web, dengan fitur yang lebih sederh
 
 ## 🧩 Model Pengembangan
 Proyek ini dikembangkan menggunakan **Model Iteratif**, yang memungkinkan tim membangun versi awal aplikasi secara cepat, lalu menyempurnakannya melalui beberapa iterasi berdasarkan feedback dan pengujian internal.
-
----
-
-## ⚙️ Cara Menjalankan
-
-1. Clone repo ini:
-   ```bash
-   git clone https://github.com/akmalgoldi/quizhub.git
-   ```
-2. Import file database.sql ke phpMyAdmin.
-3. Atur koneksi database di: `config/db.php`
-4. Jalankan project menggunakan XAMPP.
-5. Buka browser dan akses:
-   ```
-   http://localhost/quizhub/public/
 
 ---
 
