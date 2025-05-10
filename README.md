@@ -1,26 +1,24 @@
-# 🎯 QuizHub – Aplikasi Kuis Online Sederhana
-
-QuizHub adalah aplikasi kuis online berbasis web yang terinspirasi dari Kahoot, namun dirancang lebih sederhana. Aplikasi ini memungkinkan seorang host untuk membuat kuis dan peserta dapat bergabung menggunakan PIN tanpa perlu login.
+# 🎯 QuizHub
+QuizHub adalah aplikasi kuis online berbasis web, dengan fitur yang lebih sederhana dan ringan. Aplikasi ini memungkinkan seorang **host** untuk membuat dan menjalankan kuis secara langsung, serta membagikan PIN kepada peserta. Peserta (**player**) dapat bergabung dengan mudah hanya menggunakan **PIN dan nickname**, tanpa perlu melakukan login. Aplikasi ini dirancang untuk interaksi kuis yang cepat, praktis, dan menyenangkan, baik untuk kegiatan pembelajaran maupun hiburan.
 
 ---
 
 ## 📌 Fitur Utama
 
-### Untuk Host:
-- Register & Login
+### 👨‍🏫 Host
+- Register / Login
 - Dashboard Host
 - Membuat kuis baru
 - Menambahkan pertanyaan dan jawaban
-- Memulai kuis (generate PIN)
-- Melihat peserta yang bergabung
-- Menjalankan sesi kuis live
-- Melihat hasil dan skor akhir
-
-### Untuk Peserta:
-- Join kuis menggunakan PIN + nickname
-- Menunggu sesi kuis dimulai
+- Memulai sesi kuis dan generate PIN
+- Melihat skor dan hasil akhir peserta
+  
+### 🧑‍🎓 Player
+- Join kuis menggunakan PIN
+- Memasukkan nickname
+- Menunggu kuis dimulai
 - Menjawab pertanyaan satu per satu secara live
-- Melihat skor akhir dan peringkat
+- Melihat skor akhir atau peringkat
 
 ---
 
@@ -29,6 +27,11 @@ QuizHub adalah aplikasi kuis online berbasis web yang terinspirasi dari Kahoot, 
 - MySQL (via phpMyAdmin)
 - HTML, CSS, JavaScript (basic)
 - Tanpa framework (sederhana)
+
+---
+
+## 🧩 Model Pengembangan
+Proyek ini dikembangkan menggunakan **Model Iteratif**, yang memungkinkan tim membangun versi awal aplikasi secara cepat, lalu menyempurnakannya melalui beberapa iterasi berdasarkan feedback dan pengujian internal.
 
 ---
 
