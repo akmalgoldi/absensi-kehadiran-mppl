@@ -10,6 +10,14 @@
 
 ---
 
+## 🔁 Model Pengembangan
+
+Proyek ini menggunakan **Iterative Model** sebagai pendekatan pengembangan perangkat lunak. 
+Model ini memungkinkan pengembangan bertahap dalam siklus yang berulang, sehingga setiap versi aplikasi dapat diperbaiki dan ditingkatkan berdasarkan umpan balik pengguna dan pengujian sebelumnya. 
+Setiap iterasi mencakup tahap analisis kebutuhan, perancangan, implementasi, dan evaluasi.
+
+---
+
 ## 🚀 Fitur Unggulan
 
 | Fitur                    | Deskripsi                                                                 |
