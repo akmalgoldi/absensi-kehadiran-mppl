@@ -38,7 +38,6 @@
 - Web server seperti **XAMPP**, **LAMPP**, atau **MAMP**
 - **PHP** versi ≥ 8.1
 - **MySQL** versi ≥ 8.0
-- Composer (opsional untuk autoloading)
 
 ### 🚀 Langkah Instalasi
 
