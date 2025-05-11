@@ -8,3 +8,15 @@
 Aplikasi web untuk memodernisasi pendataan warga RT/RW dengan fitur manajemen data, laporan statistik, dan generator surat resmi. Dibangun dengan **PHP Native** dan **MySQL**, dirancang untuk kemudahan penggunaan dan keamanan data.
 
 ---
+
+## 🚀 Fitur Unggulan
+
+| Fitur                     | Deskripsi                                                                 |
+|---------------------------|---------------------------------------------------------------------------|
+| 🔒 **Autentikasi Admin**   | Login/logout dengan session management dan validasi role (RT/RW).         |
+| 📝 **CRUD Data Warga**     | Tambah, edit, hapus data warga & keluarga dengan validasi NIK unik.       |
+| 📈 **Analisis Demografi**  | Laporan statistik usia, jenis kelamin, pekerjaan, dan status perkawinan. |
+| 📄 **Generator Surat**     | Buat surat pengantar (SKTM, nikah, domisili) secara otomatis.            |
+| 🔍 **Pencarian Cepat**     | Cari warga berdasarkan NIK, nama, atau filter kategori.                  |
+
+---
